@@ -1,0 +1,45 @@
+body {
+  background: #000;
+  color: white;
+  font-family: Roboto;
+  font-size: 30px;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ca9808;
+  margin: 20px 0px 30px;
+  font-family: Teko;
+  font-size: 3rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.highlight {
+  background-color: #ca9808;
+  color: black;
+}
+
+.freeSpace {
+    background-color: #ca9808;
+}
+
+.logo {
+  margin: 40px 0px 20px;
+}
+
+table {
+  border-collapse: collapse;
+  color: #ca9808;
+  margin: auto;
+}
+
+th, td {
+  padding: 2rem 1rem;
+  border: 3px white solid;
+  text-align: center;
+  // text-shadow: 2px 2px 4px #616161;
+  width: 20%;
+}
