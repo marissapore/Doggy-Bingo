@@ -90,9 +90,6 @@ function insertData(words) {
 
 insertData(shuffle(words));
 
-const freeSpace = isFreeSpace();
-console.log(freeSpace);
-
 // Toggle highlighted cells
 table.onclick = function(event) {
     highlight(event.target);

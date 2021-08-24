@@ -1,19 +1,20 @@
 body {
   background: #000;
   color: white;
-  font-family: Roboto;
-  font-size: 30px;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
   margin: auto;
-  max-width: 800px;
-  padding: 20px;
+  max-width: 90%;
+  padding: 0;
   text-align: center;
 }
 
 h1 {
   color: #ca9808;
-  margin: 20px 0px 30px;
-  font-family: Teko;
-  font-size: 3rem;
+  margin: 3rem 0;
+  font-family: Teko, sans-serif;
+  font-size: 2rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -26,20 +27,61 @@ h1 {
     background-color: #ca9808;
 }
 
-.logo {
-  margin: 40px 0px 20px;
-}
-
 table {
   border-collapse: collapse;
   color: #ca9808;
   margin: auto;
 }
 
-th, td {
-  padding: 2rem 1rem;
-  border: 3px white solid;
+td {
+  padding: 1rem 0.5rem;
+  border: solid 1px white;
   text-align: center;
-  // text-shadow: 2px 2px 4px #616161;
-  width: 20%;
+}
+
+td img {
+    max-width: 40%;
+}
+
+@media only screen and (min-width: 375px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        margin: 2rem 0 5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        font-size: 20px;
+        max-width: 80%;
+    }
+
+    td {
+        border: solid 2px white;
+        padding: 2.5rem 1rem;
+    }
+    td img {
+        max-width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    body {
+        font-size: 25px;
+        font-weight: normal;
+        max-width: 55%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
+    }
 }
