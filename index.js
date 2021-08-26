@@ -39,7 +39,6 @@ function shuffle(words) {
   return words;
 }
 
-
 console.log(shuffle(words));
 
 function calcRowSize(words) {
@@ -62,8 +61,6 @@ function isFreeSpace(wordCount, index) {
 function insertData(words) {
     var table = document.getElementById("table");
     table.innerHTML=""; // Initialize the table
-
-
 
     var tr=""; // Intitialize the table row
     var rowSize = calcRowSize(words);

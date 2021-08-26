@@ -1,20 +1,32 @@
+/* General */
+
+html {
+    display: table;
+    height: 100%;
+    margin: auto;
+}
+
 body {
   background: #000;
   color: white;
+  display: table-cell;
   font-family: Roboto, sans-serif;
   font-size: 11px;
   font-weight: bold;
-  margin: auto;
+  height: 100%;
   max-width: 90%;
   padding: 0;
   text-align: center;
+  vertical-align: middle;
 }
 
 h1 {
   color: #ca9808;
-  margin: 3rem 0;
+  display: block;
+  margin: 0;
+  padding: 0 0 10px 0;
   font-family: Teko, sans-serif;
-  font-size: 2rem;
+  font-size: 35px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -34,7 +46,7 @@ table {
 }
 
 td {
-  padding: 1rem 0.5rem;
+  padding: 8px 5px;
   border: solid 1px white;
   text-align: center;
 }
@@ -43,28 +55,45 @@ td img {
     max-width: 40%;
 }
 
-@media only screen and (min-width: 375px) {
+/* Media Queries */
+@media only screen and (min-width: 290px) {
+
+    td {
+        padding: 11px 8px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+
+    td {
+        padding: 18px 12px;
+    }
+
+}
+
+@media only screen and (min-width: 485px) {
 
     body {
         font-size: 15px;
+        max-width: 450px;
     }
 
-    h1 {
-        margin: 2rem 0 5rem;
+    td {
+        padding: 20px 15px;
     }
-    
+
 }
 
 @media only screen and (min-width: 600px) {
 
     body {
-        font-size: 20px;
-        max-width: 80%;
+        font-size: 15px;
+        max-width: 500px;
     }
 
     td {
         border: solid 2px white;
-        padding: 2.5rem 1rem;
+        padding: 25px 20px;
     }
     td img {
         max-width: 40%;
@@ -72,16 +101,15 @@ td img {
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 950px) {
 
     body {
-        font-size: 25px;
-        font-weight: normal;
-        max-width: 55%;
+        max-width: 750px;
     }
 
-    h1 {
-        font-size: 2.5rem;
-        margin: 1.5rem 0;
-    }
+}
+
+/* border-box makes everything easy */
+html,body,div,span,object,iframe,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,input,select,textarea,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,nav,section,main{
+	box-sizing: border-box;
 }
